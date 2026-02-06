@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | MK Kim</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <button class="nav__toggle" onclick="toggleNav()" aria-label="메뉴 열기">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav__overlay" onclick="toggleNav()"></div>
+
+  <nav class="nav">
+    <div class="nav__profile">
+      <img src="assets/img/profile.png" alt="Profile" class="nav__avatar">
+      <div class="nav__name">MK Kim</div>
+      <div class="nav__role">$ Backend Developer</div>
+    </div>
+    <ul class="nav__links">
+      <li><a href="index.html"><span class="nav__icon">~</span> Home</a></li>
+      <li><a href="about.html"><span class="nav__icon">&amp;</span> About</a></li>
+      <li><a href="projects.html" class="active"><span class="nav__icon">{}</span> Projects</a></li>
+      <li><a href="troubleshooting.html"><span class="nav__icon">!</span> Troubleshooting</a></li>
+    </ul>
+    <div class="nav__footer">
+      <a href="https://github.com/mkkim" class="nav__social" title="GitHub" target="_blank" rel="noopener">GH</a>
+      <a href="mailto:mkkim@example.com" class="nav__social" title="Email">@</a>
+    </div>
+  </nav>
+
+  <main class="main">
+
+    <header class="page-header fade-in">
+      <span class="page-header__tag">// projects</span>
+      <h1 class="page-header__title">
+        <span class="highlight">프로젝트</span> 포트폴리오
+      </h1>
+      <p class="page-header__sub">
+        실무에서 진행한 주요 프로젝트와 개인 프로젝트를 정리했습니다.
+      </p>
+    </header>
+
+    <!-- Company Projects -->
+    <section class="section fade-in">
+      <h2 class="section__title">Work Projects</h2>
+
+      <div class="card">
+        <div class="card__header">
+          <div class="card__title">가맹점 관리 백오피스</div>
+          <span class="card__period">2023.01 ~ 현재</span>
+        </div>
+        <div class="card__role">Backend Developer</div>
+        <div class="card__desc">
+          <p>가맹점, 브랜드, 상품, 쿠폰 등 전반적인 프랜차이즈 관리 시스템 개발</p>
+          <ul>
+            <li>Spring MVC 기반 REST API v1/v2 설계 및 구현</li>
+            <li>DataTables 의존성 제거 및 커스텀 테이블 리팩토링 (102개 파일 중 44개 완료)</li>
+            <li>서버사이드 페이지네이션 공통 모듈 (<code>PaginationRenderer</code>) 개발</li>
+            <li>엑셀 다운로드 공통화 모듈 개발</li>
+            <li>XSS 방어를 위한 <code>escapeHtml</code> 적용</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Java</span>
+            <span class="tag">Spring MVC</span>
+            <span class="tag">MyBatis</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">JSP</span>
+            <span class="tag tag--purple">jQuery</span>
+            <span class="tag tag--purple">GitLab</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__header">
+          <div class="card__title">공통 라이브러리 (koriem-lib-common)</div>
+          <span class="card__period">2023 ~ 현재</span>
+        </div>
+        <div class="card__role">Developer</div>
+        <div class="card__desc">
+          <p>여러 모듈에서 공통으로 사용하는 비즈니스 로직 및 유틸리티 라이브러리</p>
+          <ul>
+            <li>암호화/복호화 유틸리티</li>
+            <li>공통 응답 객체 및 페이징 처리</li>
+            <li>JAR 빌드 및 멀티 모듈 배포 관리</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Java</span>
+            <span class="tag">Maven</span>
+            <span class="tag tag--purple">Multi-Module</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal / Side Projects -->
+    <section class="section fade-in">
+      <h2 class="section__title">Side Projects</h2>
+
+      <div class="project-grid">
+
+        <div class="project-card">
+          <div class="project-card__top">
+            <span class="project-card__icon">&#128193;</span>
+            <div class="project-card__links">
+              <a href="#" title="GitHub">GH</a>
+            </div>
+          </div>
+          <div class="project-card__title">Developer Portfolio</div>
+          <div class="project-card__desc">
+            GitHub Pages로 배포하는 개인 포트폴리오 사이트.
+            순수 HTML/CSS만으로 다크 테마 개발자 UI 구현.
+          </div>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag tag--purple">GitHub Pages</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__top">
+            <span class="project-card__icon">&#128295;</span>
+            <div class="project-card__links">
+              <a href="#" title="GitHub">GH</a>
+            </div>
+          </div>
+          <div class="project-card__title">Troubleshooting Wiki</div>
+          <div class="project-card__desc">
+            실무에서 겪은 장애 대응 및 트러블슈팅 경험을 기록하는 문서 모음.
+            문제 상황, 원인 분석, 해결 과정을 상세히 정리.
+          </div>
+          <div class="tags">
+            <span class="tag">Debugging</span>
+            <span class="tag tag--purple">Documentation</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__top">
+            <span class="project-card__icon">&#128218;</span>
+            <div class="project-card__links">
+              <a href="#" title="GitHub">GH</a>
+            </div>
+          </div>
+          <div class="project-card__title">프로젝트 이름</div>
+          <div class="project-card__desc">
+            여기에 사이드 프로젝트 설명을 작성하세요.
+            어떤 문제를 해결하고, 어떤 기술을 사용했는지 간단히 소개합니다.
+          </div>
+          <div class="tags">
+            <span class="tag">Spring Boot</span>
+            <span class="tag">JPA</span>
+            <span class="tag tag--purple">REST API</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__top">
+            <span class="project-card__icon">&#128640;</span>
+            <div class="project-card__links">
+              <a href="#" title="GitHub">GH</a>
+            </div>
+          </div>
+          <div class="project-card__title">프로젝트 이름</div>
+          <div class="project-card__desc">
+            여기에 또 다른 사이드 프로젝트 설명을 작성하세요.
+            배운 점이나 성과 중심으로 작성하면 좋습니다.
+          </div>
+          <div class="tags">
+            <span class="tag">Java</span>
+            <span class="tag">Docker</span>
+            <span class="tag tag--purple">CI/CD</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Key Contributions -->
+    <section class="section fade-in">
+      <h2 class="section__title">Key Contributions</h2>
+
+      <div class="code-block">
+        <div class="code-block__header">
+          <span class="code-block__dot code-block__dot--red"></span>
+          <span class="code-block__dot code-block__dot--yellow"></span>
+          <span class="code-block__dot code-block__dot--green"></span>
+          <span class="code-block__label">contributions.log</span>
+        </div>
+        <div class="code-block__body">
+          <span class="comment">/* 레거시 리팩토링 */</span><br>
+          <span class="keyword">- DataTables</span> 의존성 제거 <span class="string">(44/102 files migrated)</span><br>
+          <span class="keyword">- PaginationRenderer</span> 서버사이드 페이징 공통화<br>
+          <span class="keyword">- escapeHtml()</span> XSS 방어 체계 도입<br><br>
+
+          <span class="comment">/* 공통 모듈 개발 */</span><br>
+          <span class="keyword">- koriem-lib-common</span> 공유 라이브러리 구축<br>
+          <span class="keyword">- excelDownload()</span> 엑셀 다운로드 공통화<br><br>
+
+          <span class="comment">/* API 설계 */</span><br>
+          <span class="keyword">- REST API v1/v2</span> 엔드포인트 설계<br>
+          <span class="keyword">- 응답 구조</span> 표준화 <span class="string">({ code, list, pageInfo })</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 MK Kim. Built with HTML &amp; CSS.</p>
+    </footer>
+
+  </main>
+
+  <script>
+    function toggleNav() {
+      document.querySelector('.nav').classList.toggle('open');
+      document.querySelector('.nav__overlay').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
