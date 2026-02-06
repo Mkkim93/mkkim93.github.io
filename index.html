@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MK Kim | Backend Developer</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Mobile Nav Toggle -->
+  <button class="nav__toggle" onclick="toggleNav()" aria-label="메뉴 열기">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav__overlay" onclick="toggleNav()"></div>
+
+  <!-- Side Navigation -->
+  <nav class="nav">
+    <div class="nav__profile">
+      <img src="assets/img/profile.png" alt="Profile" class="nav__avatar">
+      <div class="nav__name">MK Kim</div>
+      <div class="nav__role">$ Backend Developer</div>
+    </div>
+
+    <ul class="nav__links">
+      <li><a href="index.html" class="active"><span class="nav__icon">~</span> Home</a></li>
+      <li><a href="about.html"><span class="nav__icon">&amp;</span> About</a></li>
+      <li><a href="projects.html"><span class="nav__icon">{}</span> Projects</a></li>
+      <li><a href="troubleshooting.html"><span class="nav__icon">!</span> Troubleshooting</a></li>
+    </ul>
+
+    <div class="nav__footer">
+      <a href="https://github.com/mkkim" class="nav__social" title="GitHub" target="_blank" rel="noopener">GH</a>
+      <a href="mailto:mkkim@example.com" class="nav__social" title="Email">@</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main">
+
+    <!-- Hero -->
+    <header class="page-header fade-in">
+      <span class="page-header__tag">// welcome</span>
+      <h1 class="page-header__title">
+        안녕하세요,<br><span class="highlight typing">김민경</span>입니다.
+      </h1>
+      <p class="page-header__sub">
+        Java/Spring 기반 백엔드 개발자로, 안정적이고 유지보수하기 좋은 코드를 지향합니다.
+      </p>
+    </header>
+
+    <!-- Terminal-style intro -->
+    <div class="code-block fade-in">
+      <div class="code-block__header">
+        <span class="code-block__dot code-block__dot--red"></span>
+        <span class="code-block__dot code-block__dot--yellow"></span>
+        <span class="code-block__dot code-block__dot--green"></span>
+        <span class="code-block__label">developer.json</span>
+      </div>
+      <div class="code-block__body">
+        {<br>
+        &nbsp;&nbsp;<span class="property">"name"</span>: <span class="string">"김민경"</span>,<br>
+        &nbsp;&nbsp;<span class="property">"role"</span>: <span class="string">"Backend Developer"</span>,<br>
+        &nbsp;&nbsp;<span class="property">"stack"</span>: [<span class="string">"Java"</span>, <span class="string">"Spring Boot"</span>, <span class="string">"MyBatis"</span>, <span class="string">"MySQL"</span>],<br>
+        &nbsp;&nbsp;<span class="property">"interests"</span>: [<span class="string">"Clean Code"</span>, <span class="string">"Refactoring"</span>, <span class="string">"DX"</span>]<br>
+        }
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <section class="section fade-in">
+      <h2 class="section__title">Experience</h2>
+
+      <div class="card">
+        <div class="card__header">
+          <div class="card__title">Koriem</div>
+          <span class="card__period">2023.01 ~ 현재</span>
+        </div>
+        <div class="card__role">Backend Developer</div>
+        <div class="card__desc">
+          <ul>
+            <li>가맹점 관리 시스템 백오피스 개발 및 유지보수</li>
+            <li>레거시 코드 리팩토링 (DataTables 제거, 공통화 작업)</li>
+            <li>REST API v1/v2 설계 및 구현</li>
+            <li>엑셀 다운로드 공통 모듈 개발</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Java</span>
+            <span class="tag">Spring</span>
+            <span class="tag">MyBatis</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">JSP</span>
+            <span class="tag tag--purple">jQuery</span>
+            <span class="tag tag--purple">Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section fade-in">
+      <h2 class="section__title">Skills</h2>
+
+      <div class="skill-grid">
+        <div class="skill-card">
+          <div class="skill-card__title">Backend</div>
+          <ul class="skill-list">
+            <li>Java</li>
+            <li>Spring Boot / Spring MVC</li>
+            <li>MyBatis</li>
+            <li>JPA</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__title">Database</div>
+          <ul class="skill-list">
+            <li>MySQL</li>
+            <li>Oracle</li>
+            <li>Redis</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__title">Frontend</div>
+          <ul class="skill-list">
+            <li>JSP / HTML / CSS</li>
+            <li>JavaScript (ES6+)</li>
+            <li>jQuery / AJAX</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__title">DevOps & Tools</div>
+          <ul class="skill-list">
+            <li>Git / GitLab</li>
+            <li>Linux / Shell</li>
+            <li>IntelliJ IDEA</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education / Cert -->
+    <section class="section fade-in">
+      <h2 class="section__title">Education</h2>
+
+      <div class="card">
+        <div class="card__header">
+          <div class="card__title">OO대학교 컴퓨터공학과</div>
+          <span class="card__period">20XX ~ 20XX</span>
+        </div>
+        <div class="card__desc">학사 졸업</div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 MK Kim. Built with HTML &amp; CSS.</p>
+    </footer>
+
+  </main>
+
+  <script>
+    function toggleNav() {
+      document.querySelector('.nav').classList.toggle('open');
+      document.querySelector('.nav__overlay').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | MK Kim</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <button class="nav__toggle" onclick="toggleNav()" aria-label="메뉴 열기">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav__overlay" onclick="toggleNav()"></div>
+
+  <nav class="nav">
+    <div class="nav__profile">
+      <img src="assets/img/profile.png" alt="Profile" class="nav__avatar">
+      <div class="nav__name">MK Kim</div>
+      <div class="nav__role">$ Backend Developer</div>
+    </div>
+    <ul class="nav__links">
+      <li><a href="index.html"><span class="nav__icon">~</span> Home</a></li>
+      <li><a href="about.html" class="active"><span class="nav__icon">&amp;</span> About</a></li>
+      <li><a href="projects.html"><span class="nav__icon">{}</span> Projects</a></li>
+      <li><a href="troubleshooting.html"><span class="nav__icon">!</span> Troubleshooting</a></li>
+    </ul>
+    <div class="nav__footer">
+      <a href="https://github.com/mkkim" class="nav__social" title="GitHub" target="_blank" rel="noopener">GH</a>
+      <a href="mailto:mkkim@example.com" class="nav__social" title="Email">@</a>
+    </div>
+  </nav>
+
+  <main class="main">
+
+    <header class="page-header fade-in">
+      <span class="page-header__tag">// about me</span>
+      <h1 class="page-header__title">
+        <span class="highlight">개발자</span>로서의 이야기
+      </h1>
+      <p class="page-header__sub">
+        어떤 문제를 만나든 끝까지 파고드는 것을 좋아합니다.
+      </p>
+    </header>
+
+    <!-- Quick Info -->
+    <div class="info-grid fade-in">
+      <div class="info-item">
+        <div class="info-item__icon">&#60;/&#62;</div>
+        <div class="info-item__label">Position</div>
+        <div class="info-item__value">Backend</div>
+      </div>
+      <div class="info-item">
+        <div class="info-item__icon">&#9881;</div>
+        <div class="info-item__label">Main Stack</div>
+        <div class="info-item__value">Java / Spring</div>
+      </div>
+      <div class="info-item">
+        <div class="info-item__icon">&#9734;</div>
+        <div class="info-item__label">Interest</div>
+        <div class="info-item__value">Refactoring</div>
+      </div>
+      <div class="info-item">
+        <div class="info-item__icon">&#9992;</div>
+        <div class="info-item__label">Location</div>
+        <div class="info-item__value">Seoul, KR</div>
+      </div>
+    </div>
+
+    <!-- Introduction -->
+    <section class="section fade-in">
+      <h2 class="section__title">Introduction</h2>
+
+      <div class="card">
+        <div class="card__desc">
+          <p>
+            안녕하세요. Java/Spring 기반 백엔드 개발자 <strong>김민경</strong>입니다.
+          </p>
+          <br>
+          <p>
+            가맹점 관리 시스템(백오피스)을 개발하면서, 레거시 코드를 점진적으로 개선하고
+            유지보수 가능한 구조로 리팩토링하는 일에 큰 보람을 느끼고 있습니다.
+          </p>
+          <br>
+          <p>
+            "왜 이렇게 되어 있을까?"를 항상 먼저 생각하고,
+            코드 한 줄에도 이유가 있어야 한다고 믿습니다.
+            단순히 동작하는 코드가 아닌, 다음 사람이 읽기 좋은 코드를 지향합니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="section fade-in">
+      <h2 class="section__title">Values</h2>
+
+      <div class="skill-grid">
+        <div class="skill-card">
+          <div class="skill-card__title">Readable Code</div>
+          <ul class="skill-list">
+            <li>명확한 네이밍과 일관된 구조</li>
+            <li>불필요한 추상화 지양</li>
+            <li>코드 리뷰를 통한 품질 향상</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__title">Progressive Improvement</div>
+          <ul class="skill-list">
+            <li>빅뱅 리팩토링보다 점진적 개선</li>
+            <li>기존 동작 보장하면서 구조 변경</li>
+            <li>공통화를 통한 중복 제거</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__title">Problem Solving</div>
+          <ul class="skill-list">
+            <li>근본 원인을 파악하는 디버깅</li>
+            <li>트러블슈팅 기록 습관</li>
+            <li>팀원과의 지식 공유</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__title">Communication</div>
+          <ul class="skill-list">
+            <li>기술 결정에 대한 명확한 근거 제시</li>
+            <li>비개발 직군과의 원활한 소통</li>
+            <li>문서화를 통한 맥락 전달</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Style -->
+    <section class="section fade-in">
+      <h2 class="section__title">How I Work</h2>
+
+      <div class="code-block">
+        <div class="code-block__header">
+          <span class="code-block__dot code-block__dot--red"></span>
+          <span class="code-block__dot code-block__dot--yellow"></span>
+          <span class="code-block__dot code-block__dot--green"></span>
+          <span class="code-block__label">work-style.txt</span>
+        </div>
+        <div class="code-block__body">
+          <span class="comment">// 1. 현재 코드를 충분히 이해한다</span><br>
+          <span class="keyword">read</span>(<span class="string">"기존 코드"</span>);<br><br>
+          <span class="comment">// 2. 왜 이렇게 작성되었는지 맥락을 파악한다</span><br>
+          <span class="keyword">analyze</span>(<span class="string">"히스토리"</span>, <span class="string">"비즈니스 요구사항"</span>);<br><br>
+          <span class="comment">// 3. 더 나은 방향을 설계한다</span><br>
+          <span class="keyword">plan</span>(<span class="string">"점진적 개선안"</span>);<br><br>
+          <span class="comment">// 4. 기존 동작을 보장하면서 변경한다</span><br>
+          <span class="keyword">refactor</span>(<span class="string">"안전하게"</span>);<br><br>
+          <span class="comment">// 5. 기록을 남긴다</span><br>
+          <span class="keyword">document</span>(<span class="string">"다음 사람을 위해"</span>);
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 MK Kim. Built with HTML &amp; CSS.</p>
+    </footer>
+
+  </main>
+
+  <script>
+    function toggleNav() {
+      document.querySelector('.nav').classList.toggle('open');
+      document.querySelector('.nav__overlay').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
