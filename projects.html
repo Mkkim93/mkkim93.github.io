@@ -19,9 +19,9 @@
 
   <nav class="nav">
     <div class="nav__profile">
-      <img src="assets/img/profile.png" alt="Profile" class="nav__avatar">
+      <img src="assets/images/profile.jpeg" alt="Profile" class="nav__avatar">
       <div class="nav__name">MK Kim</div>
-      <div class="nav__role">$ Backend Developer</div>
+      <div class="nav__role">백엔드 개발자</div>
     </div>
     <ul class="nav__links">
       <li><a href="index.html"><span class="nav__icon">~</span> Home</a></li>
@@ -54,21 +54,22 @@
       <div class="card">
         <div class="card__header">
           <div class="card__title">가맹점 관리 백오피스</div>
-          <span class="card__period">2023.01 ~ 현재</span>
+          <span class="card__period">2025.01 ~ 현재</span>
         </div>
         <div class="card__role">Backend Developer</div>
         <div class="card__desc">
           <p>가맹점, 브랜드, 상품, 쿠폰 등 전반적인 프랜차이즈 관리 시스템 개발</p>
           <ul>
             <li>Spring MVC 기반 REST API v1/v2 설계 및 구현</li>
-            <li>DataTables 의존성 제거 및 커스텀 테이블 리팩토링 (102개 파일 중 44개 완료)</li>
+            <li>DataTables 의존성 제거 및 커스텀 테이블 리팩토링</li>
             <li>서버사이드 페이지네이션 공통 모듈 (<code>PaginationRenderer</code>) 개발</li>
             <li>엑셀 다운로드 공통화 모듈 개발</li>
             <li>XSS 방어를 위한 <code>escapeHtml</code> 적용</li>
+            <li>관리자의 CRUD Permission </li>
           </ul>
           <div class="tags">
             <span class="tag">Java</span>
-            <span class="tag">Spring MVC</span>
+            <span class="tag">Spring Boot</span>
             <span class="tag">MyBatis</span>
             <span class="tag">MySQL</span>
             <span class="tag">JSP</span>
@@ -80,24 +81,60 @@
 
       <div class="card">
         <div class="card__header">
-          <div class="card__title">공통 라이브러리 (koriem-lib-common)</div>
-          <span class="card__period">2023 ~ 현재</span>
+          <div class="card__title">OAuth2.0 기반 소셜 로그인 연동</div>
         </div>
+        <div class="project-card__top">
+            <span class="project-card__icon">&#128193;</span>
+            <div class="project-card__links">
+              <a href="https://www.notion.so/OAuth2-Provider-2f72d0ce16578091aee8ce50249b8c02">Link</a>
+            </div>
+          </div>
         <div class="card__role">Developer</div>
         <div class="card__desc">
-          <p>여러 모듈에서 공통으로 사용하는 비즈니스 로직 및 유틸리티 라이브러리</p>
+          <p>OAuth2.0 기반 소셜 로그인 연동을 설계 및 구현하였으며,
+            기존 인증/인가 요구사항을 분석하여 로그인/회원가입 UX를 개선하였습니다.
+          </p>
           <ul>
-            <li>암호화/복호화 유틸리티</li>
-            <li>공통 응답 객체 및 페이징 처리</li>
-            <li>JAR 빌드 및 멀티 모듈 배포 관리</li>
+            <li>KAKAO, NAVER, GOOGLE 연동 및 Provider 추상화 기반 구조 설계</li>
+            <li>Apple, FaceBook 등 신규 플랫폼 확장을 고려한 전략 패턴 기반 Provider 분리</li>
+            <li>기존 계정 연동, 중복 가입, 토큰 재발급 등 다양한 인증 시나리오 테스트 및 검증</li>
+            <li>Access/Refresh Token 구조 개선 및 Spring Session 기반 관리 적용</li>
           </ul>
           <div class="tags">
+            <span class="tag">OAuth2.0</span>
             <span class="tag">Java</span>
-            <span class="tag">Maven</span>
-            <span class="tag tag--purple">Multi-Module</span>
+            <span class="tag tag--purple">Spring Boot</span>
           </div>
         </div>
       </div>
+
+      <div class="card">
+        <div class="card__header">
+          <div class="card__title">Admin 권한 정책에 따른 메뉴 접근 권한 설계 (Trade-off)</div>
+        </div>
+        <div class="project-card__top">
+          <span class="project-card_icon">&#128193;</span>
+          <div class="project-card__links">
+            <a href="https://www.notion.so/3022d0ce1657802b91c9c8409dda0303">Link</a>
+          </div>
+          </div>
+        <div class="card__role">Developer</div>
+        <div class="card__desc">
+          <p>권한 기반 UI 제어 + 서버 재검증을 통한 이중 인가 보안 구조 구현</p>
+          <ul>
+            <li>Permission 정책 설계</li>
+            <li>권한 기반 UI 제어를 위한 Custom Observer 로직 구현</li>
+            <li>Interceptor를 통한 서버 측 인가 검증 및 403 예외 처리</li>
+            <li>신규 기능 구현 시 러닝커브 최소화를 위한 설계 및 문서 기록</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Spring Boot</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag tag--purple">Spring Boot</span>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <!-- Personal / Side Projects -->
@@ -110,36 +147,23 @@
           <div class="project-card__top">
             <span class="project-card__icon">&#128193;</span>
             <div class="project-card__links">
-              <a href="#" title="GitHub">GH</a>
+              <a href="https://heopjin.com">Link</a>
             </div>
           </div>
-          <div class="project-card__title">Developer Portfolio</div>
+          <div class="project-card__title">클라우드 기반 웹 서비스 아키텍처 설계 및 운영</div>
+          
           <div class="project-card__desc">
-            GitHub Pages로 배포하는 개인 포트폴리오 사이트.
-            순수 HTML/CSS만으로 다크 테마 개발자 UI 구현.
+            Spring Boot + Vue.js 로 구현한 SPA 웹 어플리케이션
+            AWS EC2 + RDS + Nginx 기반 단일 인스턴스 배포 구조 설계
+            도메인 연결 및 HTTPS 적용
+            빌드/배포 과정 수동 자동화 스크립트 작성
+            보안 그룹 및 인바운드 정책 설정
           </div>
           <div class="tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag tag--purple">GitHub Pages</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-card__top">
-            <span class="project-card__icon">&#128295;</span>
-            <div class="project-card__links">
-              <a href="#" title="GitHub">GH</a>
-            </div>
-          </div>
-          <div class="project-card__title">Troubleshooting Wiki</div>
-          <div class="project-card__desc">
-            실무에서 겪은 장애 대응 및 트러블슈팅 경험을 기록하는 문서 모음.
-            문제 상황, 원인 분석, 해결 과정을 상세히 정리.
-          </div>
-          <div class="tags">
-            <span class="tag">Debugging</span>
-            <span class="tag tag--purple">Documentation</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">Vue.js</span>
+            <span class="tag tag--purple">GitHub Actions</span>
+            <span class="tag">AWS EC2</span>
           </div>
         </div>
 
@@ -147,39 +171,25 @@
           <div class="project-card__top">
             <span class="project-card__icon">&#128218;</span>
             <div class="project-card__links">
-              <a href="#" title="GitHub">GH</a>
+              <a href="https://www.notion.so/Monograp-2a42d0ce165780619edac93823162a47" title="Notion">Link</a>
             </div>
           </div>
-          <div class="project-card__title">프로젝트 이름</div>
+          <div class="project-card__title">Monograp</div>
           <div class="project-card__desc">
-            여기에 사이드 프로젝트 설명을 작성하세요.
-            어떤 문제를 해결하고, 어떤 기술을 사용했는지 간단히 소개합니다.
+            Flutter + Spring Boot 기반 소모임 관리 플랫폼
+            DDD + Layerd Architecture 도메인 설계
+            이벤트 기반 푸시 알림 처리 및 트랜잭션 분리 설계
+            JWT + Redis 기반 인증 구조 설계
           </div>
           <div class="tags">
             <span class="tag">Spring Boot</span>
             <span class="tag">JPA</span>
+            <span class="tag tag--green">Flutter</span>
             <span class="tag tag--purple">REST API</span>
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-card__top">
-            <span class="project-card__icon">&#128640;</span>
-            <div class="project-card__links">
-              <a href="#" title="GitHub">GH</a>
-            </div>
-          </div>
-          <div class="project-card__title">프로젝트 이름</div>
-          <div class="project-card__desc">
-            여기에 또 다른 사이드 프로젝트 설명을 작성하세요.
-            배운 점이나 성과 중심으로 작성하면 좋습니다.
-          </div>
-          <div class="tags">
-            <span class="tag">Java</span>
-            <span class="tag">Docker</span>
-            <span class="tag tag--purple">CI/CD</span>
-          </div>
-        </div>
+      
 
       </div>
     </section>
@@ -213,7 +223,7 @@
     </section>
 
     <footer class="footer">
-      <p>&copy; 2025 MK Kim. Built with HTML &amp; CSS.</p>
+      <p>&copy; 2026 MK Kim. Built with HTML &amp; CSS.</p>
     </footer>
 
   </main>
